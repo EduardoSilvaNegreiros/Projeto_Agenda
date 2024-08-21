@@ -1,0 +1,42 @@
+[33mcommit be2fb5670917fd1ea463da027aca43988d98fef3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31magenda/master[m[33m)[m
+Author: eduardo <edunegreiross@gmail.com>
+Date:   Tue Aug 13 09:31:24 2024 -0300
+
+    Arrumar Helmet
+
+[33mcommit 8eabb6ca4e2e68941be3c89928e97a8d0a4c93c2[m
+Merge: 4e70613 1dbc800
+Author: eduardo <edunegreiross@gmail.com>
+Date:   Mon Aug 12 11:07:11 2024 -0300
+
+    Removed README.md to resolve merge conflict
+
+[33mcommit 4e70613c74bf69877a5804762f0431029fc3b40f[m
+Author: eduardo <edunegreiross@gmail.com>
+Date:   Sat Aug 10 19:03:04 2024 -0300
+
+    Commit inicial com README
+
+[33mcommit 8a56558dab2c5840cc095658e690b3c758aaa1cd[m
+Author: Eduardo <edunegreiross@gmail.com>
+Date:   Sat Aug 10 15:07:19 2024 -0300
+
+    commit
+
+[33mcommit fd74ab6f1977bd1dc699c85ba48c9c07154660f7[m
+Author: eduardo <edunegreiross@gmail.com>
+Date:   Sat Aug 10 22:18:11 2024 +0000
+
+    Adicionar README.md
+
+[33mcommit 1dbc800d7f285cf2b2605b57f50651e155160111[m
+Author: eduardo <edunegreiross@gmail.com>
+Date:   Sat Aug 10 19:03:04 2024 -0300
+
+    Commit inicial com README
+
+[33mcommit 6a2f4efb1e2c8842230e1933ffb6a37459c1cd52[m
+Author: Eduardo <edunegreiross@gmail.com>
+Date:   Sat Aug 10 15:07:19 2024 -0300
+
+    commit
