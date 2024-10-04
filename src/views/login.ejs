@@ -18,43 +18,41 @@
           <p>Se você ainda não tem conta, preencha o formulário abaixo:</p>
 
           <form class="form-cadastro" action="/login/register" method="POST">
-            <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+            <input type="hidden" name="_csrf" value=<%= csrfToken %>> <!-- Token CSRF para segurança -->
             <div class="form-group">
               <label>Seu e-mail</label>
               <input type="email" class="form-control" name="email">
-              <small class="email-error text-danger"></small>
+              <small class="email-error text-danger"></small> <!-- Mensagem de erro para e-mail -->
             </div>
             <div class="form-group">
               <label>Sua senha</label>
               <input type="password" class="form-control" name="password">
-              <small class="password-error text-danger"></small>
+              <small class="password-error text-danger"></small> <!-- Mensagem de erro para senha -->
             </div>
-            <button type="submit" class="btn btn-primary">Criar minha conta</button>
+            <button type="submit" class="btn btn-primary">Criar minha conta</button> <!-- Botão de cadastro -->
           </form>
 
         </div>
 
         <div class="col-lg my-5">
           <h4>Faça seu login</h4>
-
           <p>Se você já tem uma conta, faça login abaixo:</p>
 
           <form class="form-login" action="/login/login" method="POST">
-            <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+            <input type="hidden" name="_csrf" value=<%= csrfToken %>> <!-- Token CSRF para segurança -->
             <div class="form-group">
               <label>Seu e-mail</label>
               <input type="email" class="form-control" name="email">
-              <small class="email-error text-danger"></small>
+              <small class="email-error text-danger"></small> <!-- Mensagem de erro para e-mail -->
             </div>
             <div class="form-group">
               <label>Sua senha</label>
               <input type="password" class="form-control" name="password">
-              <small class="password-error text-danger"></small>
+              <small class="password-error text-danger"></small> <!-- Mensagem de erro para senha -->
             </div>
-            <button type="submit" class="btn btn-primary">Entrar</button>
+            <button type="submit" class="btn btn-primary">Entrar</button> <!-- Botão de login -->
           </form>
 
-          
         </div>
 
       </div>
