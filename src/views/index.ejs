@@ -9,25 +9,24 @@
       <h1 class="text-center">Agenda</h1>
       <p class="text-center lead">Suas informações abaixo</p>
 
+      <%- include('includes/messages') %> <!-- Inclui mensagens de erro ou sucesso -->
 
-      <%- include('includes/messages') %>
-
-      <% if(contatos.length > 0) { %>
+      <% if(contatos.length > 0) { %> <!-- Verifica se há contatos na agenda -->
       <div class="responsive-table">
         <table class="table my-3">
-          <% contatos.forEach(contato => { %>
+          <% contatos.forEach(contato => { %> <!-- Percorre e exibe cada contato -->
             <tr>
-              <td><%= contato.nome %></td>
-              <td><%= contato.sobrenome %></td>
-              <td><%= contato.telefone %></td>
-              <td><%= contato.email %></td>
-              <td><a href="/contato/index/<%= contato._id %>">Editar</a></td>
-              <td><a class="danger" href="/contato/delete/<%= contato._id %>">Excluir</a></td>
+              <td><%= contato.nome %></td> <!-- Exibe o nome do contato -->
+              <td><%= contato.sobrenome %></td> <!-- Exibe o sobrenome do contato -->
+              <td><%= contato.telefone %></td> <!-- Exibe o telefone do contato -->
+              <td><%= contato.email %></td> <!-- Exibe o email do contato -->
+              <td><a href="/contato/index/<%= contato._id %>">Editar</a></td> <!-- Link para editar o contato -->
+              <td><a class="danger" href="/contato/delete/<%= contato._id %>">Excluir</a></td> <!-- Link para excluir o contato -->
             </tr>
           <% }); %>
         </table>
       </div>
-      <% } else { %>
+      <% } else { %> <!-- Exibe mensagem caso não haja contatos -->
         <p class="text-center lead">Não existem contatos na sua agenda</p>
       <% } %>
     </div>
@@ -36,4 +35,4 @@
   </div>
 </div>
 
-<%- include('includes/footer') %>
+<%- include('includes/footer') %> <!-- Inclui o rodapé da página -->
