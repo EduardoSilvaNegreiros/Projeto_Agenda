@@ -1,29 +1,28 @@
-<% if (errors.length > 0) { %>
-
-<div class="row">
-  <div class="col my-3">
-    <div class="alert alert-danger">
-        <% errors.forEach(erro => { %>
-            <%= erro %><br>
-      <% }); %>
-    </div>
-  </div>
-</div>
-
-<% } %>
-
-
-<% if (success.length > 0) { %>
+<% if (errors.length > 0) { %> <!-- Se houver erros -->
 
   <div class="row">
     <div class="col my-3">
-      <div class="alert alert-success">
-          <% success.forEach(success => { %>
-              <%= success %><br>
+      <div class="alert alert-danger"> <!-- Exibe mensagem de erro -->
+          <% errors.forEach(erro => { %> <!-- Percorre os erros -->
+              <%= erro %><br> <!-- Mostra cada erro -->
         <% }); %>
       </div>
     </div>
   </div>
   
+  <% } %>
+  
+  <% if (success.length > 0) { %> <!-- Se houver mensagens de sucesso -->
+  
+    <div class="row">
+      <div class="col my-3">
+        <div class="alert alert-success"> <!-- Exibe mensagem de sucesso -->
+            <% success.forEach(success => { %> <!-- Percorre as mensagens -->
+                <%= success %><br> <!-- Mostra cada sucesso -->
+          <% }); %>
+        </div>
+      </div>
+    </div>
+    
   <% } %>
   
