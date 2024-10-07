@@ -9,39 +9,46 @@
       <h1 class="text-center">Contato</h1>
       <p class="text-center lead">Crie ou edite seu contato abaixo.</p>
 
-      <%- include('includes/messages') %>
+      <%- include('includes/messages') %> <!-- Inclui mensagens de erro ou sucesso -->
 
-      <% if(contato._id) { %>
+      <% if(contato._id) { %> <!-- Verifica se o contato já existe (edição) -->
       <form action="/contato/edit/<%= contato._id %>" method="POST">
-      <% } else { %>
+      <% } else { %> <!-- Caso contrário, cria um novo contato -->
       <form action="/contato/register" method="POST">
       <% } %>
       
-        <input type="hidden" name="_csrf" value=<%= csrfToken %>>
+        <input type="hidden" name="_csrf" value=<%= csrfToken %>> <!-- Token CSRF para proteção -->
+
+        <!-- Campo para nome -->
         <div class="form-group">
           <label>Nome</label>
           <input value="<%= contato.nome %>" type="text" class="form-control" name="nome">
         </div>
+
+        <!-- Campo para sobrenome -->
         <div class="form-group">
           <label>Sobrenome</label>
           <input value="<%= contato.sobrenome %>" type="text" class="form-control" name="sobrenome">
         </div>
+
+        <!-- Campo para email -->
         <div class="form-group">
           <label>Email</label>
           <input value="<%= contato.email %>" type="email" class="form-control" name="email">
         </div>
+
+        <!-- Campo para telefone -->
         <div class="form-group">
           <label>Telefone</label>
           <input value="<%= contato.telefone %>" type="tel" class="form-control" name="telefone">
         </div>
-        <button type="submit" class="btn btn-primary">Salvar</button>
+
+        <button type="submit" class="btn btn-primary">Salvar</button> <!-- Botão de envio -->
       </form>
-
-
     </div>
     
     <div class="col-lg-2"></div>
   </div>
 </div>
 
-<%- include('includes/footer') %>
+<%- include('includes/footer') %> <!-- Inclui o rodapé da página -->
