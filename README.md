@@ -1,23 +1,44 @@
-# Agenda em JavaScript
+Agenda em JavaScript
 
-Uma aplicação simples de agenda desenvolvida em JavaScript, HTML e CSS. Esta aplicação permite que os usuários adicionem, visualizem, editem e excluam contatos facilmente.
+Uma aplicação simples de agenda desenvolvida em JavaScript, HTML e CSS. Esta aplicação permite que os usuários adicionem, visualizem, editem e excluam contatos de maneira prática.
 
-## Funcionalidades
+Funcionalidades
 
-- **Adicionar Contatos**: Insira nome e telefone de novos contatos.
-- **Listar Contatos**: Visualize todos os contatos cadastrados em uma lista.
-- **Editar Contatos**: Modifique as informações de contatos existentes.
-- **Excluir Contatos**: Remova contatos da lista.
+Adicionar Contatos: Permite que o usuário insira nome e telefone de novos contatos.
 
-## Tecnologias Utilizadas
+Listar Contatos: Exibe todos os contatos cadastrados em uma lista de fácil visualização.
 
-- **HTML**: Estrutura da aplicação.
-- **CSS**: Estilos e layout.
-- **JavaScript**: Lógica de funcionamento e manipulação do DOM.
+Editar Contatos: Possibilita a edição das informações dos contatos já cadastrados.
 
-## Como Usar
+Excluir Contatos: Remove contatos da lista com facilidade.
 
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   
+
+Tecnologias Utilizadas
+
+HTML: Responsável pela estrutura da aplicação.
+
+CSS: Define o estilo e o layout da página.
+
+JavaScript: Garante o funcionamento da lógica e manipulação dinâmica dos elementos (DOM).
+
+
+Como Usar
+
+1. Clone o repositório:
+
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+
+
+2. Navegue até o diretório do projeto:
+
+cd nome-do-repositorio
+
+
+3. Abra o arquivo index.html no seu navegador para começar a usar a aplicação.
+
+
+
+Contribuições
+
+Contribuições são bem-vindas! Caso tenha sugestões ou melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
